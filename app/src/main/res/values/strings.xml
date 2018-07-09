@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Password Generator</string>
+    <string name="selectedPassword">Selected Password</string>
+    <string name="generatePasswords">Generate Passwords</string>
+</resources>
