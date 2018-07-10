@@ -34,26 +34,12 @@
         app:layout_constraintStart_toEndOf="@+id/textView_pwCountHead"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <SeekBar
-        android:id="@+id/seekBar_count"
-        style="@style/Widget.AppCompat.SeekBar.Discrete"
-        android:layout_width="362dp"
-        android:layout_height="27dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="20dp"
-        android:max="10"
-        android:progress="3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_pwCountResult" />
-
     <TextView
         android:id="@+id/textView_pwLengthHead"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="20dp"
         android:fontFamily="sans-serif"
         android:text="Select Password Lengths:"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
@@ -67,7 +53,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="20dp"
         android:fontFamily="sans-serif"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textSize="18sp"
@@ -76,23 +62,8 @@
         app:layout_constraintStart_toEndOf="@+id/textView_pwLengthHead"
         app:layout_constraintTop_toBottomOf="@+id/seekBar_count" />
 
-    <SeekBar
-        android:id="@+id/seekBar_length"
-        style="@style/Widget.AppCompat.SeekBar.Discrete"
-        android:layout_width="353dp"
-        android:layout_height="32dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="20dp"
-        android:max="10"
-        android:progress="3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.533"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_pwLengthsResult" />
-
     <Button
-        android:id="@+id/button_generare"
+        android:id="@+id/button_generate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -113,6 +84,7 @@
         android:layout_marginTop="8dp"
         android:fontFamily="sans-serif"
         android:hint="@string/selectedPassword"
+        android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -133,6 +105,32 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_generare" />
+        app:layout_constraintTop_toBottomOf="@+id/button_generate" />
+
+    <SeekBar
+        android:id="@+id/seekBar_count"
+        android:layout_width="353dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:max="7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_pwCountResult" />
+
+    <SeekBar
+        android:id="@+id/seekBar_length"
+        android:layout_width="353dp"
+        android:layout_height="31dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:max="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_pwLengthsResult" />
 
 </android.support.constraint.ConstraintLayout>
